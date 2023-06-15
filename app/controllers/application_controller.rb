@@ -1,8 +1,8 @@
 class ApplicationController < ActionController::Base
-    def index
-        render html: 'home'
+    def home
+        render :template => 'pages/home'
     end
     def about
-        render html: 'about'
+        render :template => 'pages/about'
     end
 end
